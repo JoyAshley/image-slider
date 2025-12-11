@@ -4,31 +4,132 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Image Slider</title>
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Lightbox2 CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/css/lightbox.min.css" rel="stylesheet" />
+    <!-- Custom CSS (Loaded last to override) -->
+    <link rel="stylesheet" href="asset/css/style.css">
 </head>
 <body>
-    <div class="slider-container">
-        <nav>
-            <div class="logo">Image Slider</div>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="#gallery">Gallery</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-        <div class="hero">
-            <div class="hero-text">
-             <h1>A Gallery of Soft, Pretty Moments</h1>
-             <p>Explore a curated mix of beauty, fashion, florals and lifestyle aesthetics- all in a smooth, elegant slider made for the girly heart.</p>
-            </div>
-            <button id="#gallery">View Gallery</button>
+
+    <!-- Header -->
+    <header>
+        <div class="logo">
+            <i class="fa-solid fa-images image-icon"></i> Image Slider
         </div>
-        <section id="gallery">
-            <div gallery-text>
-                <h2>Explore the gallery </h2>
-                <p>Tap an image to open the slider and enjoy the vibe.</p>
-            </div>
+        <div class="header-actions">
+           <a href="#">Home</a>
+           <a href="#gallery">Gallery</a>
+           <a href="#contact">Contact</a>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        
+        <!-- Hero Section -->
+        <section class="hero-center">
+            <h1>A Gallery of Soft, Pretty Moments</h1>
+            <p>Explore a curated mix of beauty, fashion, florals and lifestyle aesthetics<br> all in a smooth, elegant slider made for the girly heart.</p>
+            <a href="#gallery" class="btn-cta">
+                <i class="fa-solid fa-compass"></i> Explore Now
+            </a>
         </section>
-    </div>
+
+        <!-- Main Grid -->
+        <section class="image-grid" id="gallery">
+             <!-- Item 1 -->
+             <div class="grid-item">
+                 <a href="asset/image/bag.jpg" data-lightbox="gallery" data-title="Abstract Texture">
+                    <img src="asset/image/bag.jpg" alt="Texture">
+                 </a>
+             </div>
+             <!-- Item 2 -->
+             <div class="grid-item">
+                 <a href="asset/image/candle.jpg" data-lightbox="gallery" data-title="Candle">
+                    <img src="asset/image/candle.jpg" alt="Candle">
+                 </a>
+             </div>
+             <!-- Item 3 -->
+             <div class="grid-item">
+                 <a href="asset/image/candle2.jpg" data-lightbox="gallery" data-title="Candle & Mug">
+                    <img src="asset/image/candle2.jpg" alt="Candle & Mug">
+                 </a>
+             </div>
+             <!-- Item 4 -->
+             <div class="grid-item">
+                 <a href="asset/image/coffee.jpg" data-lightbox="gallery" data-title="Coffee">
+                    <img src="asset/image/coffee.jpg" alt="Coffee">
+                 </a>
+             </div>
+             <!-- Item 5 -->
+             <div class="grid-item">
+                 <a href="asset/image/hero-spring.png" data-lightbox="gallery" data-title="Flower in a vase">
+                    <img src="asset/image/hero-spring.png" alt="Flower in a vase">
+                 </a>
+             </div>
+             <!-- Item 6 -->
+             <div class="grid-item">
+                 <a href="asset/image/jewelry1.jpg" data-lightbox="gallery" data-title="Earing">
+                    <img src="asset/image/jewelry1.jpg" alt="Earing">
+                 </a>
+             </div>
+             <!-- Item 7 -->
+             <div class="grid-item">
+                 <a href="asset/image/jewelry2.jpg" data-lightbox="gallery" data-title="Necklace">
+                    <img src="asset/image/jewelry2.jpg" alt="Necklace">
+                 </a>
+             </div>
+             <!-- Item 8 -->
+             <div class="grid-item">
+                 <a href="asset/image/lippie.jpg" data-lightbox="gallery" data-title="Lippie">
+                    <img src="asset/image/lippie.jpg" alt="Lippie">
+                 </a>
+             </div>
+             <!-- Item 9 -->
+             <div class="grid-item">
+                 <a href="asset/image/ordinary.jpg" data-lightbox="gallery" data-title="Ordinary Skincaare">
+                    <img src="asset/image/ordinary.jpg" alt="Ordinary">
+                 </a>
+             </div>
+             <!-- Item 10 -->
+             <div class="grid-item">
+                 <a href="asset/image/rose.jpg" data-lightbox="gallery" data-title="Rose">
+                    <img src="asset/image/rose.jpg" alt="Rose">
+                 </a>
+             </div>
+             <!-- Item 11 -->
+             <div class="grid-item">
+                 <a href="asset/image/workspace.jpg" data-lightbox="gallery" data-title="Workspace">
+                    <img src="asset/image/workspace.jpg" alt="Workspace">
+                 </a>
+             </div>
+             <!-- Item 12 -->
+             <div class="grid-item">
+                 <a href="asset/image/collection-texture.png" data-lightbox="gallery" data-title="Petals">
+                    <img src="asset/image/collection-texture.png" alt="Petals">
+                 </a>
+             </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer id="contact">
+        <div class="footer-content">
+            <p>&copy; 2025 Image Slider</p>
+            <div class="socials">
+                <a href="https://www.github.com/"><i class="fa-brands fa-github"></i></a>
+                <a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://www.tiktok.com/"><i class="fa-brands fa-tiktok"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- jQuery and Lightbox2 JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/js/lightbox.min.js"></script>
+
 </body>
 </html>
